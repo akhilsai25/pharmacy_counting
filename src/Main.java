@@ -139,7 +139,7 @@ public static void main(String[] args) throws IOException
 	readFile(path);
 	
 	//Filtering and writing part
-
+     writeFile(path_output);
 	System.out.println("!!KABOOM!!");
 	System.out.println("CHECK THE OUTPUT FILE FOR THE DATA");
 		}
