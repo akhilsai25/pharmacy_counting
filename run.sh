@@ -6,4 +6,4 @@
 
 javac ./src/CustomComparator.java
 javac ./src/Main.java
-java Main ./input/input(1).txt ./output/output(1).txt
+java Main ./input/input_new.txt ./output/output_new.txt
