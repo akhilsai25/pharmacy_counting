@@ -7,23 +7,22 @@ The input and output paths are specified in the command line arguments as shown 
 
 Approach used:-
  
-Using the path provided from the command line, file is read using BufferedReader and the records are iterated line by line skipping the first line (header)
+Using the path provided from the command line, file is read using BufferedReader and the records are iterated line by line skipping the first line (header).
 
-
-For every row, each line is read.
-Two HashMaps are used here. For both the maps, drug_name is used as the key.
+Every line is read using the reader.
+Two HashMaps are updated for every iteration (for every row). For both the maps, drug_name is used as the key.
 
 For the first map :-
 Key -> drug_name
 value -> cost
 
-Here the cost is updated for every record. i.e., cost=cost+new_cost
+Here the cost is updated for every record. i.e., cost=cost+new_cost for that particular drug.
 
 For the second map :-
 Key -> drug_name
 value -> HashSet of doctors (first_name+last_name) who prescribed that particular drug.
 
-Here the doctor is added to set (to maintain unique set).
+Here the doctor is added to set (to maintain unique set) for that particular drug.
 
 After the two maps are updated, the "mpprice" map is loaded into a list along with comparator (CustomComparator).
 In CustomComparator the lists are sorted based on cost and then based on the drug_name if the costs are equal.
