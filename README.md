@@ -29,3 +29,5 @@ In CustomComparator the lists are sorted based on cost and then based on the dru
 
 Finally, iterating through the lists the required fields are written into a file with the fields required.
 The required fields are:- drug _name and cost from the list && doctor_count from the "mpdoc" for that specific drug.
+
+I have tested the code with several types of data and it worked fine.
