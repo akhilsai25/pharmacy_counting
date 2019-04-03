@@ -1,4 +1,4 @@
-##Program to process 24 million records:-
+#Program to process 24 million records:-
 The program is implemented in Java. And the run commands are given in run.sh file. 
 The input and output paths are specified in the command line arguments as shown below (3). Please note that the path to the files need to be given based on the platform used. (Written for Linux Environment in general).
 
